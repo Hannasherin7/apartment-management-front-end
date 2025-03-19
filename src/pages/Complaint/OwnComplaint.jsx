@@ -14,7 +14,7 @@ const OwnComplaint = () => {
 
   const fetchData = () => {
     axios
-      .get("http://localhost:8088/ownComplaint", {
+      .get("https://apartment-management-backend.onrender.com/ownComplaint", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       .then((response) => {

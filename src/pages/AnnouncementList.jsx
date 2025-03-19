@@ -10,7 +10,7 @@ const AnnouncementList = () => {
 
 
     const fetchData=()=>{
-        axios.post("http://localhost:8088/viewAnnouncement",{},{
+        axios.post("https://apartment-management-backend.onrender.com/viewAnnouncement",{},{
             headers:{"token":token,"Content-Type":"application/json"}
         }).then(
             (response)=>{

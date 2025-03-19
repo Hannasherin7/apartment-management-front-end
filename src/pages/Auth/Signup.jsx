@@ -25,7 +25,7 @@ const Signup = () => {
       }
   
       axios
-        .post("http://localhost:8088/signup", data)
+        .post("https://apartment-management-backend.onrender.com/signup", data)
         .then((response) => {
           if (response.data.status === "SIGNUP") {
             alert("Registration successful");

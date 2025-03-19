@@ -24,7 +24,7 @@ const Visitor = () => {
 
     const readValue = () => {
         console.log(data)
-        axios.post("http://localhost:8088/visitor", data).then(
+        axios.post("https://apartment-management-backend.onrender.com/visitor", data).then(
             (response) => {
                 console.log(response)
                 if (response.data.status == "success") {

@@ -8,7 +8,7 @@ const ViewVisitors = () => {
 
   const RejectVisitor = (_id) => {
     let input = { "_id": _id };
-    axios.post("http://localhost:8088/rejectVisitor", input).then(
+    axios.post("https://apartment-management-backend.onrender.com/rejectVisitor", input).then(
       (response) => {
         console.log(response.data);
         if (response.data.status === "success") {
@@ -24,7 +24,7 @@ const ViewVisitors = () => {
   };
 
   const fetchData = () => {
-    axios.get("http://localhost:8088/viewVisitors",
+    axios.get("https://apartment-management-backend.onrender.com/viewVisitors",
       { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
     ).then(
       (response) => {

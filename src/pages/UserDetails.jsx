@@ -11,7 +11,7 @@ const UserDetails = () => {
 
   const userprofile = async () => {
     try {
-      const response = await axios.post("http://localhost:8088/user/profile", {}, {
+      const response = await axios.post("https://apartment-management-backend.onrender.com/user/profile", {}, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
 

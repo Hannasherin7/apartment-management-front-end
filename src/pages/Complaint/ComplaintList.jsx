@@ -12,7 +12,7 @@ const ComplaintList = () => {
 
   const fetchData = () => {
     axios
-      .get("http://localhost:8088/complaintList", {
+      .get("https://apartment-management-backend.onrender.com/complaintList", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       .then((response) => {
@@ -26,7 +26,7 @@ const ComplaintList = () => {
 
   const deleteComplaint = (_id) => {
     axios
-      .post("http://localhost:8088/deleteComplaint", { _id })
+      .post("https://apartment-management-backend.onrender.com/deleteComplaint", { _id })
       .then((response) => {
         if (response.data.status === "success") {
           alert("Complaint cleared");
@@ -43,7 +43,7 @@ const ComplaintList = () => {
   // Update complaint status
   const updateStatus = (_id, newStatus) => {
     axios
-      .post("http://localhost:8088/updateComplaintStatus", { _id, status: newStatus })
+      .post("https://apartment-management-backend.onrender.com/updateComplaintStatus", { _id, status: newStatus })
       .then((response) => {
         if (response.data.status === "success") {
           changeData((prevData) =>

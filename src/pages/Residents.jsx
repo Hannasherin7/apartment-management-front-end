@@ -7,7 +7,7 @@ const Residents = () => {
 
     const deleteNonResident = (_id) => {
         let input = { "_id": _id };
-        axios.post("http://localhost:8088/deleteNonResident", input,
+        axios.post("https://apartment-management-backend.onrender.com/deleteNonResident", input,
          
         ).then(
             (response) => {
@@ -22,7 +22,7 @@ const Residents = () => {
         ).catch(error => console.error(error));
     };
     const fetchData = () => {
-      axios.get("http://localhost:8088/residents",
+      axios.get("https://apartment-management-backend.onrender.com/residents",
         { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
       ).then(
           (response) => {

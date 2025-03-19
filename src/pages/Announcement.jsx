@@ -17,7 +17,7 @@ const Announcement = () => {
             return;
         }
 
-        axios.post("http://localhost:8088/create", input, {
+        axios.post("https://apartment-management-backend.onrender.com/create", input, {
             headers: { "Content-Type": "application/json" },
         })
         .then((response) => {

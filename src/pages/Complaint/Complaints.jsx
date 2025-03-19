@@ -43,7 +43,7 @@ const Complaints = () => {
     const handleSubmit = () => {
         if (validateForm()) {
             console.log("Submitted Complaint Data:", data);
-            axios.post("http://localhost:8088/complaints", data,
+            axios.post("https://apartment-management-backend.onrender.com/complaints", data,
                 { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
               })
                 .then((response) => {
