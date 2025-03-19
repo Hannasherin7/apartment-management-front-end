@@ -1,0 +1,53 @@
+/* Home.css */
+.home-intro {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .about {
+    background-color: #343a40;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .contact, .updates, .events, .testimonials {
+    padding: 50px 0;
+  }
+  
+  .testimonials blockquote {
+    border-left: 5px solid #ffc107;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+  }
+  
+  .footer {
+    background-color: #212529;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+  }
+  
+  .footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
